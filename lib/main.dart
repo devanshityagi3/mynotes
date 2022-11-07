@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
       future: Firebase.initializeApp(  //in future we are telling that we are waiting for firebase initialize app to do its work
    options: DefaultFirebaseOptions.currentPlatform,),
       builder: (context, snapshot){  /*snapshot of an object is the state of an object.
-        snapshot is your way of getting the results of your future. Has it started? Is it processing? Is it done or did it fail. */ 
+        snapshot is your way of getting the the results of your future. Has it started? Is it processing? Is it done or did it fail. */ 
         
         switch (snapshot.connectionState){ //tells the state
           
