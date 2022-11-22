@@ -23,6 +23,7 @@ void main() async {
         loginRoute: (context) => const LoginView(),
         registerRoute: (context) => const RegisterView(),
         notesRoute: (context) => const NotesView(),
+        verifyEmailRoute: (context) => const VerifyEmailView(),
       },
       debugShowCheckedModeBanner: false,
     ),
@@ -88,7 +89,7 @@ class _NotesViewState extends State<NotesView> {
         child: Icon(Icons.add),
       ),
       appBar: AppBar(
-        title: const Text('Add your notes'),
+        title: const Text('Main UI'),
         actions: [
           PopupMenuButton<MenuAction>(
             onSelected: (value) async {
